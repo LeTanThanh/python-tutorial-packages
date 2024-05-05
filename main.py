@@ -35,13 +35,13 @@ if __name__ == "__main__":
 
   # Initializing a package
 
-  from sales import TAX_RATE
+  # from sales import TAX_RATE
 
-  print(TAX_RATE)
+  # print(TAX_RATE)
 
-  import sales
+  # import sales
 
-  sales.order.create_sales_order()
+  # sales.order.create_sales_order()
 
   # from <package> import *
 
@@ -49,10 +49,16 @@ if __name__ == "__main__":
   from <package> import *
   """
 
-  from sales import *
+  # from sales import *
 
-  order.create_sales_order()
-  delivery.create_delivery()
+  # order.create_sales_order()
+  # delivery.create_delivery()
 
   # sales.billing.create_billing()
   # AttributeError
+
+  # Subpackages
+
+  from sales.order.order import create_sales_order
+
+  create_sales_order()
