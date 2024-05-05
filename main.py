@@ -42,3 +42,17 @@ if __name__ == "__main__":
   import sales
 
   sales.order.create_sales_order()
+
+  # from <package> import *
+
+  """
+  from <package> import *
+  """
+
+  from sales import *
+
+  order.create_sales_order()
+  delivery.create_delivery()
+
+  # sales.billing.create_billing()
+  # AttributeError
